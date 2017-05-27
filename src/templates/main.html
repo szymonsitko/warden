@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <h2>Welcome to the main page!</h2>
+
+    <a href="{{ url_for('register_page.register') }}">Register</a>
+    <a href="{{ url_for('login_page.login') }}">Login</a>
+    <a href="{{ url_for('dashboard_page.dashboard') }}">Dashboard</a>
+    <a href="{{ url_for('settings_page.settings') }}">Settings</a>
+{% endblock content %}

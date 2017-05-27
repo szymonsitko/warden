@@ -1,0 +1,1 @@
+DATABASE_PATH = "/home/simon/PycharmProjects/booker/data/data.db"
