@@ -1,0 +1,5 @@
+REGISTER_SUCCESS = "New user was added successfully, login now!"
+REGISTER_FAILURE = "Unable to register new user!"
+FORM_INVALID = "Form could not be validated!"
+LOGIN_MESSAGE = "Please enter your details to login."
+LOGIN_FAILURE = "Invalid logging values provided, please try again."

@@ -1,6 +1,21 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
     <p>Logging section</p>
+    {% if register_redirect %}
+        <h3>{{ register_redirect }}</h3>
+    {% elif error_message %}
+        <h3>{{ error_message }}</h3>
+    {% endif %}
+    <form method="POST" action="" class="form" enctype = "multipart/form-data">
+	    {% for object in form %}
+	 	    {{ object.label }}
+	 	    <br>
+	 	    {{ object }}
+	 	    <br>
+	    {% endfor %}
+		<br>
+		<button type="submit" id="submit">Login</button>
+	</form>
+
 {% endblock content %}

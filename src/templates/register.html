@@ -1,6 +1,18 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
     <p>Register section</p>
+    {% if message %}
+        <h3>{{ message }}</h3>
+    {% endif %}
+    <form method="POST" action="" class="form" enctype = "multipart/form-data">
+	    {% for object in form %}
+	 	    {{ object.label }}
+	 	    <br>
+	 	    {{ object }}
+	 	    <br>
+	    {% endfor %}
+		<br>
+		<button type="submit" id="submit">Register</button>
+	</form>
 {% endblock content %}

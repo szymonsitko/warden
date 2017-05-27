@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, abort
+from flask_login import login_required
 from jinja2 import TemplateNotFound
 
 
@@ -11,6 +12,7 @@ settings_page = Blueprint(
 
 
 @settings_page.route('/settings')
+@login_required
 def settings():
     try:
         return render_template('settings.html')
